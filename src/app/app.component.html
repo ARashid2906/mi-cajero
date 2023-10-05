@@ -1,0 +1,11 @@
+<h1>Propiedades</h1>
+<button [disabled]="btnDisabled">Enviar</button>
+<input type="text" [value]="name" />
+<!-- Si yo quiero recibir valor desde el componente es necesaario agregar entre corchetes mi variable-->
+<progress max="100" [value]=""age></progress>
+
+<h2>{{ "Hola mundo".repeat(2) }}</h2>
+<!-- En este caso 3+3 sería el texto que se estarí viendo, sin embargo lo que esta dentro de las llaves lo estaría resolviendo -->
+<p>3+3={{ 3 + 3 }}</p>
+<p>Hola soy {{ name }} tengo {{ age }} años</p>
+<img src="{{ img }}" alt="image" />
